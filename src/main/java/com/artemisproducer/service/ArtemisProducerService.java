@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import javax.jms.*;
 
 @Service
-public class ArtemisProducer {
+public class ArtemisProducerService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ArtemisProducer.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ArtemisProducerService.class);
 
     // déclaration des variables qu'on a besoin
     @Value("${jms.topic.2}")
@@ -19,7 +19,7 @@ public class ArtemisProducer {
     private ConnectionBrokerConfig connectionBrokerConfig;
 
     // constructeur
-    public ArtemisProducer(ConnectionBrokerConfig connectionBrokerConfig) {
+    public ArtemisProducerService(ConnectionBrokerConfig connectionBrokerConfig) {
         this.connectionBrokerConfig = connectionBrokerConfig;
     }
 
