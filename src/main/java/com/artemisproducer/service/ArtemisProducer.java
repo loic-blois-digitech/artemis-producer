@@ -1,4 +1,4 @@
-package com.artemisproducer.jms;
+package com.artemisproducer.service;
 
 import com.artemisproducer.config.ConnectionBrokerConfig;
 import org.slf4j.Logger;
