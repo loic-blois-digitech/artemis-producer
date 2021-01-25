@@ -59,6 +59,7 @@ public class ConnectionBrokerConfig {
 
             } catch (JMSException e) {
                 LOGGER.error(e.getErrorCode() + ": " + e.getMessage());
+                return null;
             }
             LOGGER.info("Producer connecté au broker.");
             return this.connection;
